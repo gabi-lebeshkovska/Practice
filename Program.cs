@@ -1,24 +1,18 @@
 ﻿using System;
+using System.Security.Cryptography;
 
-namespace BasketballEquipment
+namespace ConcatenateData
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int YearTax = int.Parse(Console.ReadLine());
-            double Shoes = YearTax - (YearTax * 0.4);
-            double Clothes = Shoes - (Shoes * 0.2);
-            double Ball = Clothes * 0.25;
-            double Aksess = Ball * 0.2;
-
-            double WholeChash = YearTax + Shoes+ Clothes + Ball+ Aksess;
-
-            Console.WriteLine(WholeChash);
-            
-            
-
-
+           string FirstName = Console.ReadLine();
+           string LastName = Console.ReadLine();
+           int Age= int.Parse(Console.ReadLine());
+           string Town = Console.ReadLine();
+            Console.WriteLine($"You are {FirstName} {LastName}, a {Age}-years old person from {Town}.");
+            //Console.WriteLine("You are " + FirstName + " " + LastName + ", a " + Age + "-years old person from "+ Town+".") ;
         }
     }
 }
